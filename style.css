@@ -7,8 +7,8 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-color: #000000;
-color: white;
+background-color: #5a1d1d;
+color: rgb(252, 252, 252);
 width: 100%;
 padding: 20px;
 }
@@ -20,7 +20,7 @@ align-items: center;
 justify-content: center;
 }
 .cabecalho-imagem{
-width: 10%;
+width: 180%;
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -29,7 +29,7 @@ align-items: center;
 padding: 50px;
 text-align: center;
 width: 50%;
-font: 30px;
+font: 100px;
 }
 .sociais{
 display: flex;
@@ -46,42 +46,31 @@ padding: 50px;
 text-align: center;
 
 }
-.estudante-nome {
-    margin: 10px 0 8px 0;
-    font-size: 18px;
+.estudante-nome{
+text-align: center;
 }
-.estudante-imagem {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 8px;
+.estudante-imagem{
+width: 120px;
 }
-.estudante-icone {
-    width: 28px;
-    margin: 0 4px;
+.estudante-icone{
+width: 38px;
+padding: 4px 8px;
 }
 .estudante{
 background-image: background-color(#faae43);
 padding: 24px 0;
 }
 
-.estudante-div {
-    text-align: center;
-    flex: 0 0 180px;
-    max-width: 180px;
+.estudante.div{
+text-align: center;
+padding: 24px 0;
 }
-.estudantes_todos {
-    display: flex;
-    flex-wrap: wrap;   
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 20px 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+.estudantes_todos{
+display: flex;
+justify-content: space-around;
 }
 .escola{
-background-image: linear-gradient(#3d0000,#000000);
+background-image: linear-gradient(#3d4449,#3f464b);
 color: white;
 display: flex;
 justify-content:center;
