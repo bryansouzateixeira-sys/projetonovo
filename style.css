@@ -46,28 +46,39 @@ padding: 50px;
 text-align: center;
 
 }
-.estudante-nome{
-text-align: center;
+.estudante-nome {
+    margin: 10px 0 8px 0;
+    font-size: 18px;
 }
-.estudante-imagem{
-width: 120px;
+.estudante-imagem {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
 }
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
+.estudante-icone {
+    width: 28px;
+    margin: 0 4px;
 }
 .estudante{
 background-image: background-color(#faae43);
 padding: 24px 0;
 }
 
-.estudante.div{
-text-align: center;
-padding: 24px 0;
+.estudante-div {
+    text-align: center;
+    flex: 0 0 180px;
+    max-width: 180px;
 }
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
+.estudantes_todos {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .escola{
 background-image: linear-gradient(#3d0000,#000000);
