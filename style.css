@@ -43,8 +43,8 @@ padding-right: 30px;
 }
 
 .banner1 img {
-  width: 85%;          /* experimente 80%, 85%, 90%... */
-  max-width: 1200px;   /* opcional: não deixa ficar grande demais em telas largas */
+  width: 90%;
+  max-width: 1200px;   /* opcional, evita ficar gigante em telas muito largas */
   height: auto;
   display: block;
 }
