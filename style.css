@@ -40,12 +40,12 @@ padding-right: 30px;
 .banner1 {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .banner1 img {
-  width: 90%;
-  max-width: 1200px;   /* opcional, evita ficar gigante em telas muito largas */
-  height: auto;
+  width: 100%;        /* estica até as laterais */
+  height: auto;       /* mantém a proporção */
   display: block;
 }
 .estudante_titulo{
