@@ -37,9 +37,16 @@ justify-content: flex-end;
 width: 25%;
 padding-right: 30px;
 }
-.banner1{
-display: flex;
-justify-content: center;
+.banner1 {
+  display: flex;
+  justify-content: center;
+}
+
+.banner1 img {
+  width: 85%;          /* experimente 80%, 85%, 90%... */
+  max-width: 1200px;   /* opcional: não deixa ficar grande demais em telas largas */
+  height: auto;
+  display: block;
 }
 .estudante_titulo{
 padding: 50px;
