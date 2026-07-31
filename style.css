@@ -56,7 +56,17 @@ width: 120px;
 }
 .estudante-icone{
 width: 38px;
-padding: 4px 8px;
+padding: 4px 8px;.banner1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.banner1 img {
+  width: 95%;
+  height: auto;
+  display: block;
+}
 }
 .estudante{
 background-image: background-color(#faae43);
