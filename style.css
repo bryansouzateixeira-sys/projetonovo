@@ -8,7 +8,7 @@ font-family: "Poppins", sans-serif;
 }
 header{
 background-color: hsl(0, 0%, 0%);
-color: rgb(252, 252, 252);
+color: rgba(218, 37, 37, 0.541);
 width: 100%;
 padding: 20px;
 }
