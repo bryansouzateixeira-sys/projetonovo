@@ -58,7 +58,7 @@ text-align: center;
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  border: 4px solid white;
+  border: 4px solid rgb(134, 0, 0);
 }
 .estudante-icone{
 width: 38px;
