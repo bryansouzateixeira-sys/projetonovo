@@ -74,31 +74,33 @@ padding: 4px 8px;.banner1 {
   display: block;
 }
 }
-.estudante{
-background-image: background-color(#faae43);
-padding: 24px 0;
+.estudante {
+  background-color: #faae43;   /* corrigido também */
+  padding: 40px 20px;
 }
 
 .estudante.div{
 text-align: center;
 padding: 24px 0;
 }
-.estudantes_todos{
-  display: flex;
-  justify-content: space-around;
+.estudante_titulo {
+  padding: 20px 0 40px;
+  text-align: center;
+  font-size: 2rem;
 }
-.estudantes_todos{
+.estudantes_todos {
   display: flex;
-  flex-wrap: wrap;           /* permite quebrar para a linha de baixo */
-  justify-content: center;   /* centraliza as duplas */
-  gap: 40px;                 /* espaço entre os alunos */
-  max-width: 700px;          /* limita a largura para forçar 2 por linha */
-  margin: 0 auto;            /* centraliza o bloco inteiro */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.estudante-div{
+.estudante-div {
   text-align: center;
-  width: 280px;              /* largura de cada card de aluno */
+  width: 200px;                 /* largura padrão */
+  transition: transform 0.3s;
 }
 .mapa-local {
   text-align: center;
