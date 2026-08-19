@@ -235,3 +235,41 @@ ul li a {
 ul li a:hover {
   background-color: #240404;
 }
+
+.banner1 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 0;          /* remove o espaço embaixo da imagem */
+  display: block;
+}
+
+.banner1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  vertical-align: top;
+}
+
+/* Gradiente que faz a transição suave */
+.banner1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;           /* ajuste esse valor (80px ~ 150px) conforme achar melhor */
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #ec4949 100%           /* mesma cor do fundo da seção .estudante */
+  );
+  pointer-events: none;    /* não atrapalha cliques */
+}
+
+.estudante {
+  background-color: #ec4949;
+  margin-top: 0;           /* garante que não tenha espaço */
+  padding-top: 40px;       /* ou o valor que você já usa */
+}
