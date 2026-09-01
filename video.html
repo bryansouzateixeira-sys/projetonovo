@@ -1,62 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial- scale=2.0">
-
-<title>video</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-</body>
-
-<!--menu-->
-<head>
 <body>
-<ul>
-<li><a href="index.html">Banner</a></li>
-<li><a href="famosos.html">Famosos</a></li>
-<li><a href="mapa.html">Mapa</a></li>
-<li><a href="video.html">video</a></li>
-<li><a href="sobre.html">Sobre</a></li>
-</ul>
-</head>
-</body>
 
+  <!-- Menu -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Banner</a></li>
+      <li><a href="famosos.html">Famosos</a></li>
+      <li><a href="mapa.html">Mapa</a></li>
+      <li><a href="video.html">video</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
 
-<!--header é a parte do cabeçalho do site, é o topo da página-->
-<header class="cabecalho-itens">
+  <!-- Cabeçalho -->
+  <header class="cabecalho-itens">
+    <img class="cabecalho_imagem" src="B.png" alt="Logo da Página">
+    <h2 class="titulo_site">Bryan Souza</h2>
+    <div class="sociais">
+      <img class="sociais" src="whatsapp.png" alt="Logo do Whats da Escola">
+      <img class="sociais" src="instagram.png" alt="instagram da Escola">
+    </div>
+  </header>
 
-<img class="cabecalho_imagem" src="B.png" alt="Logo da Página">
-
-<h2 class="titulo_site">Bryan Souza</h2>
-<div class="sociais">
-<img class="sociais" src="whatsapp.png" alt="Logo do Whats da Escola">
-<img class="sociais" src="instagram.png" alt="instagram da Escola">
-</div>
-</header>
-
-</section>
-</head>
-</body>
-<section class="video" id="video">
-
-  <h3>🎬 Assista ao vídeo</h3>
-  
-  <iframe 
-    src="https://www.youtube.com/embed/AJ_aqGok2-U"
-    title="Vídeo"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</div>
-</section>
+  <!-- Seção do Vídeo -->
+  <section class="video-local" id="video">
+    <h3 class="titulo-video">🎬 Assista ao vídeo</h3>
+    
+    <div class="video-responsive">
+      <iframe 
+        src="https://www.youtube.com/embed/AJ_aqGok2-U"
+        title="Vídeo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
 </body>
 </html>
 <style>
-/* Container principal da seção */
+    /* Container principal da seção do vídeo */
 .video-local {
   text-align: center;
   margin: 40px auto;
@@ -64,7 +54,7 @@
   max-width: 800px;
 }
 
-/* Título do vídeo */
+/* Título estilizado (fundo vermelho com texto branco) */
 .titulo-video {
   background-color: #7c0000;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -73,25 +63,22 @@
   color: #ffffff;
   text-align: center;
   margin-bottom: 15px;
-  padding: 10px; /* Adicionado para o texto não colar nas bordas do fundo */
+  padding: 10px;
   border-radius: 4px;
 }
 
-/* Containers para vídeos responsivos (proporção 16:9) */
-.video-responsive,
-.video-container {
+/* Envoltório responsivo para manter a proporção 16:9 */
+.video-responsive {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Proporção 16:9 */
+  padding-bottom: 56.25%; /* Proporção 16:9 (altura relativa à largura) */
   height: 0;
   overflow: hidden;
   border-radius: 8px;
 }
 
-/* Estilização dos iframes dentro dos containers responsivos */
-.video-responsive iframe,
-.video-container iframe,
-.video-local iframe {
+/* Ajusta o iframe para preencher 100% da caixa responsiva */
+.video-responsive iframe {
   position: absolute;
   top: 0;
   left: 0;
