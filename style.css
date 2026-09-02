@@ -141,13 +141,10 @@ text-decoration: none;
 }
 /*menuuuu*/
 
-html{
-  scroll-behavior:smooth;
-}
-
 body {
   margin: 0;
   padding: 0;
+  background-color: #ec4949;
 }
 
 h2, p {
