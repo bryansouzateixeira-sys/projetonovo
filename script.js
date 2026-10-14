@@ -1,101 +1,99 @@
-// Carrega o arquivo style.css dinamicamente na página
-const link = document.createElement("link");
-link.rel = "stylesheet";
-link.href = "style.css";
-document.head.appendChild(link);
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+// --- 1. INJEÇÃO AUTOMÁTICA DE CSS (Para ficar bonito e arrumar o visual) ---
+const style = document.createElement("style");
+style.textContent = `
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    background-color: #1a1a1a;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: hidden;
-}
+    body {
+        background-color: #1a1a1a;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+    }
 
-.game-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #2d2d2d;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-    transition: all 0.3s ease;
-}
+    .game-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #2d2d2d;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        transition: all 0.3s ease;
+    }
 
-/* Estilos aplicados automaticamente em modo Fullscreen */
-.game-container:fullscreen {
-    width: 100vw;
-    height: 100vh;
-    background: #1a1a1a;
-    justify-content: center;
-    border-radius: 0;
-    padding: 10px;
-}
+    /* Estilos em modo Fullscreen */
+    .game-container:fullscreen {
+        width: 100vw;
+        height: 100vh;
+        background: #1a1a1a;
+        justify-content: center;
+        border-radius: 0;
+        padding: 10px;
+    }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 15px;
-}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
 
-.score-board {
-    font-size: 1.2rem;
-    font-weight: bold;
-    background: #444;
-    padding: 8px 16px;
-    border-radius: 6px;
-    border-left: 4px solid #4CAF50;
-}
+    .score-board {
+        font-size: 1.2rem;
+        font-weight: bold;
+        background: #444;
+        padding: 8px 16px;
+        border-radius: 6px;
+        border-left: 4px solid #4CAF50;
+    }
 
-.btn {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    font-size: 1rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.2s;
-}
+    .btn {
+        background: #4CAF50;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
 
-.btn:hover {
-    background: #45a049;
-}
+    .btn:hover {
+        background: #45a049;
+    }
 
-canvas {
-    background: #111;
-    border: 4px solid #444;
-    border-radius: 6px;
-    max-width: 100%;
-    max-height: 70vh;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
-}
+    canvas {
+        background: #111;
+        border: 4px solid #444;
+        border-radius: 6px;
+        max-width: 100%;
+        max-height: 70vh;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+    }
 
-.instructions {
-    margin-top: 15px;
-    font-size: 0.9rem;
-    color: #aaa;
-    text-align: center;
-}
-//outra parte//
-
+    .instructions {
+        margin-top: 15px;
+        font-size: 0.9rem;
+        color: #aaa;
+        text-align: center;
+    }
+`;
+document.head.appendChild(style);
 
 
-
+// --- 2. LÓGICA DO JOGO DA COBRINHA ---
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 const scoreElement = document.getElementById("score");
@@ -319,7 +317,6 @@ fullscreenBtn.addEventListener("click", () => {
     }
 });
 
-// Detecta se o usuário saiu do modo tela cheia usando a tecla ESC
 document.addEventListener('fullscreenchange', () => {
     if (!document.fullscreenElement) {
         fullscreenBtn.innerText = "📺 Tela Cheia";
@@ -327,4 +324,4 @@ document.addEventListener('fullscreenchange', () => {
 });
 
 // Inicia o jogo automaticamente
-main():
+main();
