@@ -230,3 +230,4 @@ document.addEventListener('fullscreenchange', () => {
 
 // Inicia o jogo automaticamente
 main();
+
