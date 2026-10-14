@@ -35,9 +35,23 @@
 <img class="sociais" src="instagram.png" alt="instagram da Escola">
 </div>
 </header>
-<!--jogo -->
-<script src="script.js" defer></script>
 
+<!--jogo-->
+<div id="game-container">
+<button id="fs-btn" onclick="toggleFullscreen()">TELA CHEIA</button>
+
+<div id="menu-inicial">
+<h2 style="color: #ffeb3b; font-size: 32px; margin-bottom: 5px;">PIXEL SOCCER</h2>
+<button class="btn" onclick="iniciarJogo()">INICIAR JOGO</button>
+<div class="controles">
+<strong>Controles:</strong><br>
+Espaço: Passa a bola | Mouse: Mira a direção
+</div>
+</div>
+
+<canvas id="gameCanvas" width="800" height="500"></canvas>
+</div>
+<script src="script.js"></script>
 
 <!--header é a parte do cabeçalho do site, é o topo da página-->
 <header class="cabecalho-itens">
