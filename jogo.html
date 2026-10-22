@@ -37,20 +37,22 @@
 </header>
 
 <!--jogo-->
-<div id="game-container">
-<h1>Jogo da Cobrinha</h1>
-    
-<canvas id="gameCanvas" width="400" height="400"></canvas>
-<div class="controles">
-<button id="btnIniciar">Iniciar Jogo</button>
-<button id="btnFullscreen">Tela Cheia</button>
-</div>
+
+<link rel="stylesheet" href="cobrinha.css">
+
+<div id="cobrinha">
+  <div class="cobrinha-topo">
+    <h2>Jogo da Cobrinha</h2>
+    <div>
+      <button id="btnIniciar" type="button">Iniciar jogo</button>
+      <button id="btnTelaCheia" type="button">Tela cheia</button>
+    </div>
+  </div>
+  <div id="cobrinhaTela"></div>
 </div>
 
-<canvas id="gameCanvas" width="800" height="500"></canvas>
-</div>
-<script src="script.js"></script>
-
+<!-- logo antes de </body> (ou cole o JS dentro de <script>) -->
+<script src="cobrinha.js"></script>
 <!--header é a parte do cabeçalho do site, é o topo da página-->
 <header class="cabecalho-itens">
 
